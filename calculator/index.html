@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="clearNumber()">
+    <div class="calculator-container">
+        <div class="calculator" id="calc">
+            <input type="text" id="display" placeholder="0" disabled>
+            <table>
+                <tr>
+                    <td><button id="ac" onclick="clearNumber()">AC</button></td>
+                    <td><button onclick="delenDoor()">%</button></td>
+                    <td><button onclick="switchNumber()">+/-</button></td>
+                    <td><button class="longer" id="enter" onclick="calculate()">ENTER</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="changeValue('1')">1</button></td>
+                    <td><button onclick="changeValue('2')">2</button></td>
+                    <td><button onclick="changeValue('3')">3</button></td>
+                    <td><button class="longer" id="/" onclick="setButton('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="changeValue('4')">4</button></td>
+                    <td><button onclick="changeValue('5')">5</button></td>
+                    <td><button onclick="changeValue('6')">6</button></td>
+                    <td><button class="longer" id="*" onclick="setButton('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="changeValue('7')">7</button></td>
+                    <td><button onclick="changeValue('8')">8</button></td>
+                    <td><button onclick="changeValue('9')">9</button></td>
+                    <td><button class="longer" id="-" onclick="setButton('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="changeValue('0')">0</button></td>
+                    <td><button id="del" onclick="del()">DEL</button></td>
+                    <td><button onclick="changeValue('.')">.</button></td>
+                    <td><button class="longer"  id="+" onclick="setButton('+')">+</button></td>
+                </tr>
+            </table>
+            <button id="darkmode" onclick="darkmode()">Enable Darkmode</button>
+            <p id="copy" onclick="copy()">©</p>
+            <p id="name">Calcubeter</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

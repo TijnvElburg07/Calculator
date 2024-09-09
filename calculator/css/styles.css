@@ -1,0 +1,111 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.calculator {
+    background-color: #A0BBF8;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 285px;
+    position: relative;
+    font-weight: bolder;
+}
+
+#display::placeholder {
+    color: black;
+}
+
+#display {
+    height: 55px;
+    background-color: lightblue;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    font-size: 12px;
+}
+
+button {
+    background-color: rgb(232, 202, 232);
+    border: 2px solid black;
+    margin: 2px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: rgb(233, 159, 234) !important; 
+    color: white;
+}
+
+.longer {
+    width: 60px;
+    height: 30px;
+}
+
+#enter {
+    background-color: rgb(210, 156, 206);
+}
+
+ #enter:hover {
+    background-color: rgb(232, 180, 242);
+    color: white;
+ }
+
+ #ac {
+    background-color: rgb(231, 172, 231);
+    font-size: 10px;
+}
+
+ #ac:hover {
+    background-color: rgb(231, 172, 231);
+    color: white;
+ }
+
+#copy {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+#name {
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    margin: 0;
+    font-size: 8px;
+    color: black;
+}
+
+#del {
+    font-size: 8px;
+}
+
+#darkmode {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 150px;
+    position: absolute;
+    bottom: -40px;
+    left: 25px;
+}
+
